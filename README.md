@@ -38,9 +38,7 @@ Policy Shift Analysis
 ↓
 Dashboard Visualizations
 
-## Screenshots
 
-(Add screenshots here)
 
 ## Run Locally
 
