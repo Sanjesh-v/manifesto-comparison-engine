@@ -1,52 +1,133 @@
-# Manifesto Comparison Engine
+# 🏛️ Manifesto Comparison Engine
 
-AI-powered platform for comparing political manifestos using NLP, semantic similarity, and policy shift analysis.
+An AI-powered platform for analyzing and comparing political manifestos using Natural Language Processing (NLP), semantic similarity, and policy shift detection.
 
-## Features
+The application enables users to upload manifesto documents, compare their policy focus areas, identify changes in priorities across elections, and visualize manifesto trends through an interactive dashboard.
 
-- Semantic manifesto comparison
-- Topic distribution analysis
-- Policy shift detection
-- Interactive React dashboard
-- PDF upload support
-- FastAPI backend
+---
 
-## Tech Stack
+## 🚀 Features
 
-### Frontend
-- React
-- Axios
-- Recharts
+### 📄 PDF Manifesto Analysis
 
-### Backend
-- FastAPI
-- Sentence Transformers
-- Scikit-learn
-- PyPDF
+* Upload and process political manifesto PDFs
+* Automatic text extraction and preprocessing
+* Word count and document statistics
 
-## Architecture
+### 🧠 Semantic Similarity Analysis
+
+* Compare manifestos using Sentence Transformers
+* Generate semantic similarity scores using cosine similarity
+* Detect overlap in policy priorities and themes
+
+### 📊 Topic Distribution Analysis
+
+* Categorize manifesto content into:
+
+  * Economy
+  * Healthcare
+  * Education
+  * Employment
+  * Agriculture
+* Visualize topic-wise emphasis using interactive charts
+
+### 🔄 Policy Shift Detection
+
+* Compare policy focus between two manifestos
+* Identify increases and decreases in topic emphasis
+* Track changes in political priorities across election cycles
+
+### 🌐 Interactive Dashboard
+
+* React-based frontend
+* Upload and compare manifesto documents
+* Dynamic visualizations using Recharts
+* Real-time analysis results
+
+---
+
+## 🏗️ System Architecture
 
 PDF Upload
 ↓
 Text Extraction
 ↓
-Preprocessing
+Text Preprocessing
 ↓
-Semantic Similarity
+Topic Classification
 ↓
-Policy Shift Analysis
+Semantic Embedding Generation
 ↓
-Dashboard Visualizations
+Cosine Similarity Analysis
+↓
+Policy Shift Detection
+↓
+Interactive Dashboard
 
+---
 
+## 🛠️ Tech Stack
 
-## Run Locally
+### Frontend
+
+* React
+* Axios
+* Recharts
+* Vite
+
+### Backend
+
+* FastAPI
+* Python
+
+### NLP & Machine Learning
+
+* Sentence Transformers
+* Scikit-learn
+* NumPy
+
+### Document Processing
+
+* PyPDF
+
+---
+
+## 📂 Project Structure
+
+manifesto-comparison-engine/
+
+├── app.py
+├── requirements.txt
+├── services/
+│   ├── pdf_parser.py
+│   ├── preprocess.py
+│   ├── similarity.py
+│   ├── topic_classifier.py
+│   └── policy_shift.py
+│
+├── data/
+├── uploads/
+│
+└── frontend/
+├── src/
+├── public/
+└── package.json
+
+---
+
+## ⚡ Installation
 
 ### Backend
 
 ```bash
-cd backend
+pip install -r requirements.txt
 uvicorn app:app --reload
+```
+
+Backend runs on:
+
+```text
+http://127.0.0.1:8000
 ```
 
 ### Frontend
@@ -57,11 +138,45 @@ npm install
 npm run dev
 ```
 
-## Screenshots
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 📸 Screenshots
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard-charts.png)
+(Add dashboard screenshot)
 
-### Upload Page
-  ![Upload Page](screenshots/uploads_page.png)
+### Topic Distribution Analysis
+
+(Add pie chart screenshot)
+
+### Policy Shift Analysis
+
+(Add bar chart screenshot)
+
+### Comparison Results
+
+(Add comparison screenshot)
+
+---
+
+## 🎯 Future Enhancements
+
+* AI-generated manifesto summaries
+* Transformer-based topic classification
+* Historical manifesto trend tracking
+* Multi-party comparison support
+* LLM-powered policy question answering
+* Election-wise manifesto analytics
+
+---
+
+## 👨‍💻 Author
+
+Developed as a full-stack NLP project to analyze political manifestos through semantic document comparison, policy trend analysis, and interactive data visualization.
