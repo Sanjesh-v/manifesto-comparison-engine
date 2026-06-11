@@ -150,19 +150,10 @@ http://localhost:5173
 
 ### Dashboard
 
-(Add dashboard screenshot)
+![Dashboard](screenshots/dashboard-charts.png)
 
-### Topic Distribution Analysis
-
-(Add pie chart screenshot)
-
-### Policy Shift Analysis
-
-(Add bar chart screenshot)
-
-### Comparison Results
-
-(Add comparison screenshot)
+### Upload Page
+  ![Upload Page](screenshots/uploads_page.png)
 
 ---
 
